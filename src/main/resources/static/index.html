@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiTrack - Gestão de Remessas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>LogiTrack - Painel de Gestão</h1>
+    </header>
+
+    <main>
+        <!-- Seção de Login -->
+        <section id="login-section">
+            <h2>Acesso ao Sistema</h2>
+            <form id="login-form">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" required>
+                
+                <label for="password">Senha:</label>
+                <input type="password" id="password" required>
+                
+                <button type="submit">Entrar</button>
+                <p id="login-message" class="error-message"></p>
+            </form>
+        </section>
+
+        <!-- Seção Principal da Aplicação (Visível após o login) -->
+        <section id="app-section" style="display: none;">
+            
+            <div class="container">
+                <!-- Cadastro de Nova Remessa -->
+                <div class="card">
+                    <h2>Registrar Nova Remessa</h2>
+                    <form id="remessa-form">
+                        <label for="origem">Origem:</label>
+                        <input type="text" id="origem" required>
+
+                        <label for="destino">Destino:</label>
+                        <input type="text" id="destino" required>
+
+                        <label for="pesoKg">Peso (Kg):</label>
+                        <input type="number" id="pesoKg" step="0.01" required>
+
+                        <label for="cliente">Cliente:</label>
+                        <input type="text" id="cliente" required>
+
+                        <label for="descricao">Descrição:</label>
+                        <textarea id="descricao" required></textarea>
+
+                        <button type="submit">Cadastrar Remessa</button>
+                        <p id="remessa-message" class="success-message"></p>
+                    </form>
+                </div>
+
+                <!-- Consultas e Relatórios -->
+                <div class="card">
+                    <h2>Remessas Cadastradas (Consultas)</h2>
+                    <table id="remessas-table">
+                        <thead>
+                            <tr>
+                                <th>Cód. Rastreio</th>
+                                <th>Origem</th>
+                                <th>Destino</th>
+                                <th>Status</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados serão inseridos aqui pelo JavaScript -->
+                        </tbody>
+                    </table>
+                    <p id="remessas-message" class="error-message"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LogiTrack - Desenvolvido para a disciplina de Desenvolvimento de Sistemas Corporativos.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
