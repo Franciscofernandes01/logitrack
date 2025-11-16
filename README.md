@@ -103,7 +103,7 @@ Consultas e Relatórios
 -   Listagem de remessas: GET /api/remessas
 -   Exibição em tabela no front-end.
 
-------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 5. Estrutura do Projeto
 
@@ -111,7 +111,7 @@ logitrack/ ├── src/main/java/com/logitrack │ ├── controller/ │ �
 service/ │ ├── repository/ │ └── model/ ├── src/main/resources/ │ └──
 application.properties ├── pom.xml └── README.md
 
------------------------------------------------------------------------
+----------------------------------------------------------------------
 
 6. Observações Finais
 
