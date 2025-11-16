@@ -111,7 +111,7 @@ logitrack/ ├── src/main/java/com/logitrack │ ├── controller/ │ �
 service/ │ ├── repository/ │ └── model/ ├── src/main/resources/ │ └──
 application.properties ├── pom.xml └── README.md
 
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
 6. Observações Finais
 
@@ -119,6 +119,4 @@ O projeto foi desenvolvido com boas práticas de organização,
 modularização e separação de responsabilidades.
 Ele está pronto para ser executado no Eclipse, bastando importar como
 projeto Maven ou clonar e rodar o comando mvn spring-boot:run.
-
-
 
